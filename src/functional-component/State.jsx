@@ -1,0 +1,19 @@
+import React, { useState } from 'react'
+
+const State = () => {
+
+    const [time, setTime] = useState(0);
+
+    const incrementTime = () => {
+        setTime(time + 10000000000);
+
+    }
+    return (
+        <div>
+            <h2>Time:{time}</h2>
+            <button onClick={incrementTime}>increment</button>
+        </div>
+    )
+}
+
+export default State
