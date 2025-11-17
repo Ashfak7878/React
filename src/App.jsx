@@ -1,13 +1,17 @@
 import { Link, Route, Routes } from 'react-router-dom'
 import './App.css'
-import Product from './dynamic-Routing/product'
-import ProductDetails from './dynamic-Routing/ProductDetails'
-import Navbar from './nested-routing/Navbar'
-import Home from './nested-routing/pages/Home'
-import About from './nested-routing/pages/About'
-import Services from './nested-routing/pages/Services'
-import WebDev from './nested-routing/pages/services/WebDev'
-import AppDev from './nested-routing/pages/services/AppDev'
+// import Product from './dynamic-Routing/product'
+// import ProductDetails from './dynamic-Routing/ProductDetails'
+// import Navbar from './nested-routing/Navbar'
+// import Home from './nested-routing/pages/Home'
+// import About from './nested-routing/pages/About'
+// import Services from './nested-routing/pages/Services'
+// import WebDev from './nested-routing/pages/services/WebDev'
+// import AppDev from './nested-routing/pages/services/AppDev'
+// import Person from './embadding-expression/Person'
+import Items from './react-keys/Items'
+import AllProducts from './react-keys/AllProducts'
+import SimpleForm from './form/SimpleForm'
 // import Basic from './functional-component/Basic'
 // import Home from './functional-component/hooks/useContext/themeSetting/Home'
 // import { ThemeProvider } from './functional-component/hooks/useContext/themeSetting/ThemeContext'
@@ -31,12 +35,14 @@ function App() {
     <>
       {/* embading expression */}
       {/* <Basic/> */}
+      {/* <Person/> */}
       {/* <Welcome/> */}
       {/* <CallingFunction/> */}
       {/* <Condition/> */}
 
       {/* -----------------------------functional component------------------------------ */}
       {/* <Basic/> */}
+
       {/* <State/> */}
       {/* <Props/> */}
       {/* <Counter/> */}
@@ -70,10 +76,10 @@ function App() {
       <Route path='/about' element={<About/>}/>
 
   </Routes>
-</div> */}
+</div> */}      
 
-      <Navbar />
-
+      {/* <Navbar /> */}
+{/* 
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
@@ -81,7 +87,11 @@ function App() {
           <Route path='web-dev' element={<WebDev />} />
           <Route path='app-dev' element={<AppDev />} />
         </Route>
-      </Routes>
+      </Routes> */}
+
+      {/* <Items/> */}
+      {/* <AllProducts/> */}
+      <SimpleForm/>
 
     </>
   )
@@ -110,6 +120,11 @@ export default App
 //       {/* <Mounting/> */}
 //       {/* <Update/> */}
 //       <UnMounting/>
+
+
+
+// -----------react keys-------------------
+
 //       </div>
 //     )
 //   }
