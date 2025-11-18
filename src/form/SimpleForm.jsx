@@ -7,12 +7,12 @@ const SimpleForm = () => {
     const handleSubmit = (e) => {
         if (!email) {
             setError("email is required")
-        } else if (!/^[^@]+@[^@]+\.[^@]+$/.test(email)) {
+        } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$/.test(email)) {
             setError("Email is invalid")
         } else {
             setError('')
             alert('from submitted');
-            console.log('form email', email);
+            console.log('form email', email);                  
 
         }
     }

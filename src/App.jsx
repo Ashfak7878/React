@@ -1,4 +1,4 @@
-import { Link, Route, Routes } from 'react-router-dom'
+import {  Link, Route, Routes } from 'react-router-dom'
 import './App.css'
 // import Product from './dynamic-Routing/product'
 // import ProductDetails from './dynamic-Routing/ProductDetails'
@@ -12,6 +12,7 @@ import './App.css'
 import Items from './react-keys/Items'
 import AllProducts from './react-keys/AllProducts'
 import SimpleForm from './form/SimpleForm'
+import Form from './form/FOrm'
 // import Basic from './functional-component/Basic'
 // import Home from './functional-component/hooks/useContext/themeSetting/Home'
 // import { ThemeProvider } from './functional-component/hooks/useContext/themeSetting/ThemeContext'
@@ -91,8 +92,8 @@ function App() {
 
       {/* <Items/> */}
       {/* <AllProducts/> */}
-      <SimpleForm/>
-
+      {/* <SimpleForm/> */}
+      <Form/>
     </>
   )
 }
